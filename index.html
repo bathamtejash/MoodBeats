@@ -15,12 +15,28 @@
       <input id="search" placeholder="Search song or artist" />
       <button id="btn">Search</button>
     </div>
+    <div class="controls">
+      <select id="sort">
+        <option value="az">Sort A → Z</option>
+        <option value="za">Sort Z → A</option>
+      </select>
+
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="short">Preview < 20s</option>
+        <option value="long">Preview ≥ 20s</option>
+      </select>
+
+      <button id="themeToggle">🌙 Toggle Theme</button>
+    </div>
 
     <p id="loading" class="hide">Loading...</p>
     <p id="error" class="hide">Something went wrong ❌</p>
 
     <div id="results"></div>
   </div>
+
+  
 
   <script src="javascript.js"></script>
 </body>
